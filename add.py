@@ -1,7 +1,7 @@
 '''
 =============SON OF GENISYS=====================
 Astra members adding script
-Coded by a dumbass kid- github.com/Cryptonian007
+Coded by a dumbass kid- github.com/surturbot
 Apologies if anything in the code is dumb :)
 Copy with credits
 ************************************************
@@ -45,17 +45,16 @@ minus = w + '[' + lg + '-' + w + ']' + rs
 def banner():
     # fancy logo
     b = [
-    '   _____             __',
-    '  /  _  \    _______/  |_____________',
-    ' /  /_\  \  /  ___/\   __\_  __ \__  \\',
-    '/    |    \ \___ \  |  |  |  | \// __ \_',
-    '\____|__  /____  >  |__|  |__|  (____   /',
-    '        \/     \/                     \/'
-    ]
+    '╔═══╦══╦═══╦╗─╔╦═══╦══╗╔╗─╔╗' 
+    '║╔═╗╠╣╠╣╔═╗║║─║║╔═╗║╔╗║║║─║║ '
+    '║╚═╝║║║║╚══╣╚═╝║║─║║╚╝╚╣╚═╝║ '
+    '║╔╗╔╝║║╚══╗║╔═╗║╚═╝║╔═╗║╔═╗║ '
+    '║║║╚╦╣╠╣╚═╝║║─║║╔═╗║╚═╝║║─║║ '
+    '╚╝╚═╩══╩═══╩╝─╚╩╝─╚╩═══╩╝─╚╝'
     for char in b:
         print(f'{random.choice(colors)}{char}{rs}')
     #print('=============SON OF GENISYS==============')
-    print(f'{lg}   Version: {w}1.2{lg} | Author: {w}Cryptonian{rs}\n')
+    print(f'{lg}   Version: {w}1.3{lg} | Author: {w}rishabh{rs}\n')
 
 
 # function to clear screen
@@ -171,7 +170,7 @@ approx_members_count = 0
 for acc in to_use:
     stop = index + 60
     c = TelegramClient(f'sessions/{acc[0]}', 3910389 , '86f861352f0ab76a251866059a6adbd6')
-    print(f'{plus}{grey} User: {cy}{acc[0]}{lg} -- {cy}Starting session... ')
+    print(f'{plus}{grey} User: {cy}{acc[0]}{lg} -- {cy}Starting rishabh... ')
     c.start(acc[0])
     acc_name = c.get_me().first_name
     try:
@@ -275,7 +274,7 @@ for acc in to_use:
             continue
 #global adding_status, approx_members_count
 if adding_status != 0:
-    print(f"\n{info}{lg} Adding session ended")
+    print(f"\n{info}{lg} rishabh session ended")
 try:
     if index < approx_members_count:
         log_status(scraped_grp, index)
