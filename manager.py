@@ -48,7 +48,7 @@ while True:
     print(lg+'[1] Add new accounts'+n)
     print(lg+'[2] Filter all banned accounts'+n)
     print(lg+'[3] Delete specific accounts'+n)
-    print(lg+'[4] Update your RISHABH+n)
+    print(lg+'[4] Update your RISHABH'+n)
     print(lg+'[5] Quit'+n)
     a = int(input('\nEnter your choice: '))
     if a == 1:
