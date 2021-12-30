@@ -24,17 +24,17 @@ def banner():
     import random
     # fancy logo
     b = [
-    '   _____             __',
-    '  /  _  \    _______/  |_____________',
-    ' /  /_\  \  /  ___/\   __\_  __ \__  \\',
-    '/    |    \ \___ \  |  |  |  | \// __ \_',
-    '\____|__  /____  >  |__|  |__|  (____   /',
-    '        \/     \/                     \/'
+    '╔═══╦══╦═══╦╗─╔╦═══╦══╗╔╗─╔╗
+    '║╔═╗╠╣╠╣╔═╗║║─║║╔═╗║╔╗║║║─║║
+    '║╚═╝║║║║╚══╣╚═╝║║─║║╚╝╚╣╚═╝║
+    '║╔╗╔╝║║╚══╗║╔═╗║╚═╝║╔═╗║╔═╗║
+    '║║║╚╦╣╠╣╚═╝║║─║║╔═╗║╚═╝║║─║║
+    '╚╝╚═╩══╩═══╩╝─╚╩╝─╚╩═══╩╝─╚╝
     ]
     for char in b:
         print(f'{random.choice(colors)}{char}{n}')
     #print('=============SON OF GENISYS==============')
-    print(f'   Version: 1.2 | Author: Cryptonian{n}\n')
+    print(f'   Version: 1.3 | Author: RISHABH{n}\n')
 
 def clr():
     if os.name == 'nt':
@@ -48,7 +48,7 @@ while True:
     print(lg+'[1] Add new accounts'+n)
     print(lg+'[2] Filter all banned accounts'+n)
     print(lg+'[3] Delete specific accounts'+n)
-    print(lg+'[4] Update your Astra'+n)
+    print(lg+'[4] Update your RISHABH+n)
     print(lg+'[5] Quit'+n)
     a = int(input('\nEnter your choice: '))
     if a == 1:
@@ -60,15 +60,15 @@ while True:
                 parsed_number = ''.join(phone_number.split())
                 pickle.dump([parsed_number], g)
                 new_accs.append(parsed_number)
-            print(f'\n{lg} [i] Saved all accounts in vars.txt')
+            print(f'\n{lg} [i] Saved all accounts in rishabh vars.txt')
             clr()
             print(f'\n{lg} [*] Logging in from new accounts\n')
             for number in new_accs:
                 c = TelegramClient(f'sessions/{number}', 3910389 , '86f861352f0ab76a251866059a6adbd6')
                 c.start(number)
-                print(f'{lg}[+] Login successful')
+                print(f'{lg}[+] Login in rishabh successful')
                 c.disconnect()
-            input(f'\n Press enter to goto main menu...')
+            input(f'\n Press enter to goto rishabh main menu...')
 
         g.close()
     elif a == 2:
@@ -109,7 +109,7 @@ while True:
                         pickle.dump([Phone], k)
                 k.close()
                 print(lg+'[i] All banned accounts removed'+n)
-                input('\nPress enter to goto main menu...')
+                input('\nPress enter to goto rishabh main menu...')
 
     elif a == 3:
         accs = []
@@ -137,14 +137,14 @@ while True:
         for account in accs:
             pickle.dump(account, f)
         print(f'\n{lg}[+] Account Deleted{n}')
-        input(f'\nPress enter to goto main menu...')
+        input(f'\nPress enter to goto rishabh main menu...')
         f.close()
     elif a == 4:
         # thanks to github.com/th3unkn0n for the snippet below
-        print(f'\n{lg}[i] Checking for updates...')
+        print(f'\n{lg}[i] Checking for rishabh updates...')
         try:
             # https://raw.githubusercontent.com/Cryptonian007/Astra/main/version.txt
-            version = requests.get('https://raw.githubusercontent.com/Cryptonian007/Astra/main/version.txt')
+            version = requests.get('https://raw.githubusercontent.com/surturbot/rishabhadder/main/version.txt')
         except:
             print(f'{r} You are not connected to the internet')
             print(f'{r} Please connect to the internet and retry')
@@ -167,9 +167,9 @@ while True:
                 exit()
             else:
                 print(f'{lg}[!] Update aborted.')
-                input('Press enter to goto main menu...')
+                input('Press enter to goto rishabh main menu...')
         else:
-            print(f'{lg}[i] Your Astra is already up to date')
+            print(f'{lg}[i] Your rishabh is already up to date')
             input('Press enter to goto main menu...')
     elif a == 5:
         clr()
